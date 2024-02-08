@@ -21,7 +21,7 @@ exports.BuynowAdd = async (req,res) => {
         }
         res.status(201).json({
             success: true,
-            message: "Successfully Completed!",
+            message: "Order Placed!",
             buyUserDetails
 
 
