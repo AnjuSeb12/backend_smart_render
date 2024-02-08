@@ -18,13 +18,13 @@ exports.smartAdd = async (req,res) => {
         if (!smart) {
             return res.status(500).json({
                 success: false,
-                message: "Details Registeration Failed!",
+                message: "Details Added Failed!",
 
             });
         }
         res.status(201).json({
             success: true,
-            message: "Registeration Successfully Completed!",
+            message: "Details Added Successfully!",
             smart
 
 
