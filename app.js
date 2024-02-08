@@ -16,7 +16,7 @@ app.use(express.urlencoded({
 }));
 
 app.use(express.json());
-app.use("/uploads",express.static("uploads"));
+app.use(__dirname + "/uploads",express.static(__dirname + "uploads"));
 
 const userRoutes=require("./routes/userRoutes");
 const smartRoutes=require("./routes/smartRoutes");
